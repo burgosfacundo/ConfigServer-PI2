@@ -4,10 +4,10 @@ spring:
   application:
     name: api-check
   datasource:
-    driverClassName: 
-    url: 
-    username: 
-    password: 
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://java_db:3306/vinilSound?createDatabaseIfNotExist=true
+    username: user-vinilSound
+    password: pass-vinilSound
   jpa:
     generate-ddl: true
     hibernate:
