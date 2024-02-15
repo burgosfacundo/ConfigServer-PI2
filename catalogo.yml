@@ -2,10 +2,10 @@ server:
   port: ${PORT:8083}
 spring:
   application:
-    name: catologo
+    name: catalogo
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://db:3306/vinilSound?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/vinilSound?createDatabaseIfNotExist=true
     username: user-vinilSound
     password: pass-vinilSound
   jpa:
