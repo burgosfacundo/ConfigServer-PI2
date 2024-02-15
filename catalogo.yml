@@ -9,18 +9,9 @@ spring:
     username: user-vinilSound
     password: pass-vinilSound
   jpa:
+    hibernate.ddl-auto: update
     generate-ddl: true
-    hibernate:
-      enable_lazy_load_no_trans: true
-      event:
-        merge:
-          entity_copy_observer: allow
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL10Dialect
-        format_sql: true
-    show-sql: false
+    show-sql: true
 
 info:
   application:
