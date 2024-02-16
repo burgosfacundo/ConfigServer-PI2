@@ -13,7 +13,7 @@ spring:
         - id: catalogo
           uri: lb://catalogo
           predicates:
-            - Path=/api/v1/catalogo/**
+            - Path=/catalogo/**
 
 info:
   app:
