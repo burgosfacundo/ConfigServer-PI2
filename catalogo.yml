@@ -5,9 +5,9 @@ spring:
     name: catalogo
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/vinilSound?createDatabaseIfNotExist=true
-    username: user-vinilSound
-    password: pass-vinilSound
+    url: jdbc:mysql://localhost:3306/vinylSound?createDatabaseIfNotExist=true
+    username: user-vinylSound
+    password: pass-vinylSound
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
