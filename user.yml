@@ -5,7 +5,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8181/realms/parcial-back
+          issuer-uri: http://localhost:8181/realms/vinylSound
       client:
         registration:
           keycloak:
@@ -17,8 +17,8 @@ spring:
             provider: keycloak
         provider:
           keycloak:
-            issuer-uri: http://localhost:8181/realms/parcial-back
-            tokenUri: http://localhost:8181/realms/parcial-back/protocol/openid-connect/token
+            issuer-uri: http://localhost:8181/realms/vinylSound
+            tokenUri: http://localhost:8181/realms/vinylSound/protocol/openid-connect/token
 eureka:
   instance:
     hostname: localhost
