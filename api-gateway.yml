@@ -14,6 +14,20 @@ spring:
           uri: lb://catalogo
           predicates:
             - Path=/catalogo/** , /v3/api-docs/catalogo
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak-test:
+            issuer-uri: http://localhost:8181/realms/parcial-back
+        registration:
+          keycloak-test:
+            client-id: api-gateway-client
+            client-secret: rb3YXYdO1eFGLzguNl8pcj3cZ7Zbvuty
+            scope:
+              - openid
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8090/login/oauth2/code/keycloak   
 
 info:
   app:
