@@ -19,7 +19,7 @@ spring:
       client:
         provider:
           keycloak-test:
-            issuer-uri: http://localhost:8181/realms/parcial-back
+            issuer-uri: http://localhost:8181/realms/vinylSound
         registration:
           keycloak-test:
             client-id: api-gateway-client
