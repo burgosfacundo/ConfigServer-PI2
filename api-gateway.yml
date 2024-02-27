@@ -5,15 +5,20 @@ spring:
   application:
     name: api-gateway
   cloud:    
-    gateway:      
+    gateway:
+      default-filters: TokenRelay
       discovery:
         locator:
           enabled: true
       routes:
-        - id: catalogo
-          uri: lb://catalogo
+        - id: catalog-server
+          uri: lb://catalog
           predicates:
-            - Path=/catalogo/** , /v3/api-docs/catalogo
+            - Path=/catalog/** , /v3/api-docs/catalog
+        - id: user-server
+          uri: lb://user
+          predicates:
+            - Path=/user/** , /v3/api-docs/user
   security:
     oauth2:
       client:
