@@ -19,6 +19,10 @@ spring:
           keycloak:
             issuer-uri: http://localhost:8181/realms/vinylSound
             tokenUri: http://localhost:8181/realms/vinylSound/protocol/openid-connect/token
+info:
+  application:
+    name: user-server
+    
 eureka:
   instance:
     hostname: localhost
