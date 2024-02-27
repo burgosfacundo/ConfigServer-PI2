@@ -12,7 +12,7 @@ spring:
             serverUrl: http://localhost:8181
             realm: vinylSound
             client-id: user-client
-            client-secret: aiSEVNZah8PV3FSAqduZQ9LDHB4Cl7Uh
+            client-secret: 3VFUqVGFtwFT9bn15WOKblHpzpie3QoI
             authorization-grant-type: client_credentials
             provider: keycloak
         provider:
