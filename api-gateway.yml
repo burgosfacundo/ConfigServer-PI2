@@ -11,11 +11,11 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: catalog-server
+        - id: catalog
           uri: lb://catalog
           predicates:
             - Path=/catalog/** , /v3/api-docs/catalog
-        - id: user-server
+        - id: user
           uri: lb://user
           predicates:
             - Path=/user/** , /v3/api-docs/user
