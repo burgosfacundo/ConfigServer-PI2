@@ -1,6 +1,6 @@
 spring:
   application:
-    name: user-server
+    name: user
   security:
     oauth2:
       resourceserver:
@@ -21,7 +21,7 @@ spring:
             tokenUri: http://localhost:8181/realms/vinylSound/protocol/openid-connect/token
 info:
   application:
-    name: user-server
+    name: user
     
 eureka:
   instance:
