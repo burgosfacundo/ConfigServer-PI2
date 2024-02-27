@@ -7,7 +7,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8181/realms/parcial-back
+          issuer-uri: http://localhost:8181/realms/vinylSound
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/vinylSound?createDatabaseIfNotExist=true
@@ -20,7 +20,7 @@ spring:
 
 info:
   application:
-    name: catalogo
+    name: catalog-server
 
 eureka:
   instance:
