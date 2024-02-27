@@ -23,11 +23,11 @@ spring:
         registration:
           keycloak-test:
             client-id: api-gateway-client
-            client-secret: rb3YXYdO1eFGLzguNl8pcj3cZ7Zbvuty
+            client-secret: Vzqeufbo5fJarPBXO77udm3Biz3pLoTa
             scope:
               - openid
             authorization-grant-type: authorization_code
-            redirect-uri: http://localhost:8090/login/oauth2/code/keycloak   
+            redirect-uri: http://localhost:8089/login/oauth2/code/keycloak   
 
 info:
   app:
