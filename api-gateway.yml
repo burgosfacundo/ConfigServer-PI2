@@ -7,9 +7,6 @@ spring:
   cloud:    
     gateway:
       default-filters: TokenRelay
-      discovery:
-        locator:
-          enabled: true
       routes:
         - id: catalog
           uri: lb://catalog
@@ -23,10 +20,10 @@ spring:
     oauth2:
       client:
         provider:
-          keycloak-test:
+          api-gateway-client:
             issuer-uri: http://localhost:8181/realms/vinylSound
         registration:
-          keycloak-test:
+          api-gateway-client:
             client-id: api-gateway-client
             client-secret: Vzqeufbo5fJarPBXO77udm3Biz3pLoTa
             scope:
