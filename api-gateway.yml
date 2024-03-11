@@ -11,15 +11,11 @@ spring:
         - id: catalog
           uri: lb://catalog
           predicates:
-            - Path=/catalog/**
-          filters:
-            - StripPrefix=1
+            - Path=/catalog/** , /v3/api-docs/catalog
         - id: user
           uri: lb://user
           predicates:
-            - Path=/user/**
-          filters:
-            - StripPrefix=1
+            - Path=/user/** , /v3/api-docs/user
         - id: payment
           uri: lb://payment
           predicates:
