@@ -20,6 +20,12 @@ spring:
             - Path=/user/**
           filters:
             - StripPrefix=1
+        - id: payment
+          uri: lb://payment
+          predicates:
+            - Path=/payment/**
+          filters:
+            - StripPrefix=1
   security:
     oauth2:
       client:
