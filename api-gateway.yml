@@ -11,7 +11,7 @@ spring:
         - id: catalog
           uri: lb://catalog
           predicates:
-            - Path=/catalog/** , /v3/api-docs/catalog , /catalog/image/**
+            - Path=/catalog/** , /v3/api-docs/catalog
         - id: user
           uri: lb://user
           predicates:
