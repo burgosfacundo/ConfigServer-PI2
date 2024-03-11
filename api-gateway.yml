@@ -25,7 +25,7 @@ spring:
         registration:
           api-gateway-client:
             client-id: api-gateway-client
-            client-secret: Vzqeufbo5fJarPBXO77udm3Biz3pLoTa
+            client-secret: Sp81AVKCCRxAxAx122Rv5V6J9GQnlJHu
             scope:
               - openid
             authorization-grant-type: authorization_code
