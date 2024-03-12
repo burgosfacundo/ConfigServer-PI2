@@ -4,9 +4,8 @@ server:
 spring:
   application:
     name: api-gateway
-  cloud:    
+  cloud:
     gateway:
-      default-filters: TokenRelay
       routes:
         - id: catalog
           uri: lb://catalog
@@ -19,26 +18,15 @@ spring:
         - id: payment
           uri: lb://payment
           predicates:
-            - Path=/payment/**
+            - Path=/payment/** , /v3/api-docs/payment
   security:
     oauth2:
-      client:
-        provider:
-          api-gateway-client:
-            issuer-uri: http://localhost:8181/realms/vinylSound
-        registration:
-          api-gateway-client:
-            client-id: api-gateway-client
-            client-secret: Sp81AVKCCRxAxAx122Rv5V6J9GQnlJHu
-            scope:
-              - openid
-            authorization-grant-type: authorization_code
-            redirect-uri: http://localhost:8089/login/oauth2/code/keycloak   
-
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8181/realms/vinylSound
 info:
   app:
     name: ${spring.application.name}
-
 eureka:
    client:
       registerWithEureka: false
