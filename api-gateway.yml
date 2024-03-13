@@ -10,15 +10,15 @@ spring:
         - id: catalog
           uri: lb://catalog
           predicates:
-            - Path=/catalog/** , /v3/api-docs/catalog
+            - Path=/api/catalog/** , /admin/catalog/** , /v3/api-docs/catalog
         - id: user
           uri: lb://user
           predicates:
-            - Path=/user/** , /v3/api-docs/user
+            - Path=/api/user/** , /admin/users/** , /user/service/** , /v3/api-docs/user
         - id: payment
           uri: lb://payment
           predicates:
-            - Path=/payment/** , /v3/api-docs/payment
+            - Path=/user/payment/** , /v3/api-docs/payment
   security:
     oauth2:
       resourceserver:
