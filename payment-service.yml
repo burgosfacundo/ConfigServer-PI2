@@ -3,11 +3,6 @@ server:
 spring:
   application:
     name: payment
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8181/realms/vinylSound
 info:
   application:
     name: payment
