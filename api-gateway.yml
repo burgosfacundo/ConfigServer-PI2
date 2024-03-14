@@ -22,7 +22,7 @@ spring:
         - id: order
           uri: lb://order
           predicates:
-            - Path=/user/order/** , /v3/api-docs/order
+            - Path=/user/order/** , /user/cart/** , /v3/api-docs/order
   security:
     oauth2:
       resourceserver:
