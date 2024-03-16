@@ -12,6 +12,11 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+rabbitmq:
+  username: guest
+  password: guest
+  host: localhost
+  port: 5672
 info:
   application:
     name: catalog
