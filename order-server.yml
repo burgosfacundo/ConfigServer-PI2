@@ -20,9 +20,6 @@ rabbitmq:
 info:
   application:
     name: catalog
-    email:
-      sender: vinylsoundinformation@gmail.com
-      password: rxez fzfp fudk nfji
 eureka:
   instance:
     hostname: localhost
