@@ -20,6 +20,9 @@ rabbitmq:
 info:
   application:
     name: catalog
+    email:
+      sender: vinylsoundinformation@gmail.com
+      password: rxez fzfp fudk nfji
 eureka:
   instance:
     hostname: localhost
@@ -29,6 +32,3 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-  email:
-    sender: vinylsoundinformation@gmail.com
-    password: rxez fzfp fudk nfji
