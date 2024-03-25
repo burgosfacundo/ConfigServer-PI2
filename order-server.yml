@@ -4,7 +4,6 @@ spring:
   application:
     name: order
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://database-4.cne24kciiqv0.us-east-2.rds.amazonaws.com:3307/database-4
     username: Grupo5
     password: !Grupo5password
