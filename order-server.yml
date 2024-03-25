@@ -19,7 +19,7 @@ rabbitmq:
   port: 5672
 info:
   application:
-    name: catalog
+    name: order
 eureka:
   instance:
     hostname: localhost
