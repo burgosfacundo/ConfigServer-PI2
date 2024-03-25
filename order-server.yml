@@ -5,9 +5,9 @@ spring:
     name: order
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/order?createDatabaseIfNotExist=true
-    username: user-vinylSound
-    password: pass-vinylSound
+    url: jdbc:mysql://localhost:3306/order?createDatabaseIfNotExist=true
+    username: Grupo5
+    password: !Grupo5password
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
