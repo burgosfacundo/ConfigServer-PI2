@@ -5,7 +5,7 @@ spring:
     name: order
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/order?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3307/database-4?createDatabaseIfNotExist=true
     username: Grupo5
     password: !Grupo5password
   jpa:
