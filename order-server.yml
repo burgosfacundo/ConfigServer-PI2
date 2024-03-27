@@ -5,13 +5,16 @@ spring:
     name: order
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/order?createDatabaseIfNotExist=true
-    username: user-vinylSound
-    password: pass-vinylSound
+    url: jdbc:mysql://database-4.cne24kciiqv0.us-east-2.rds.amazonaws.com:3306/database-4?useSSL=true&verifyServerCertificate=false&createDatabaseIfNotExist=true
+    username: Grupo5
+    password: Grupo5password#
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
 rabbitmq:
   username: guest
   password: guest
