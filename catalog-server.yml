@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: catalog
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8181/realms/vinylSound
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://databaseintegrador.cne24kciiqv0.us-east-2.rds.amazonaws.com:3306/databaseintegrador?useSSL=true&verifyServerCertificate=false&createDatabaseIfNotExist=true
